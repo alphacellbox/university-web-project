@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+	
+
+ <head>
+<style>
+
+
+
+
+#u6251-4{
+ box-shadow: 0px 3px 5px grey;
+
+}
+.bottom{  
+background-color: white;
+
+position:relative;width:100%;
+padding:10% 5%; text-align: center;
+
+}
+.bottom:hover{  
+
+background-color:#999999
+
+}
+
+
+</style>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2018.1.1.386"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  
+  
+  <title>Untitled 3</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
+  <link rel="stylesheet" type="text/css" href="css/add_watches.css?crc=4161512193" id="pagesheet"/>
+  
+   </head>
+ <body>
+
+  <div class="clearfix borderbox" id="page"><!-- group -->
+   <div class="clearfix grpelem" id="pu6200"><!-- group -->
+    <div class="browser_width" id="u6200-bw">
+     <div class="shadow" id="u6200"><!-- simple frame --></div>
+    </div>
+    <h:form prependId="false">
+    <nav class="MenuBar clearfix" id="menuu6201"><!-- horizontal box -->
+     <div class="MenuItemContainer clearfix grpelem" id="u6223"><!-- vertical box -->
+     <h:commandButton value="Home"  class="bottom" action="#{index_controllers.go_to_index()}"/>
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u6202"><!-- vertical box -->
+     <h:commandButton value="Add"  class="bottom"  action="#{add_watches_controller.go_to_add_watches()}"/>
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u6230"><!-- vertical box -->
+    <h:commandButton value="Delete"  class="bottom" action="#{shop_controller.go_to_shop()}"/>
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u6237"><!-- vertical box -->
+     <h:commandButton value="Edit"  class="bottom" action="#{edit_controller.go_to_edit()}"/>
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u6216"><!-- vertical box -->
+     <h:commandButton value="Blog"  class="bottom"  action="#{index_controllers.go_to_about()}"/>
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u6244"><!-- vertical box -->
+        <h:commandButton value="About"  class="bottom"  action="#{index_controllers.go_to_about()}"/>
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u6209"><!-- vertical box -->
+      <h:commandButton value="Contact"  class="bottom"  action="#{index_controllers.go_to_contact()}"/>
+     </div>
+    </nav>
+    </h:form>
+    <div class="rounded-corners clearfix" id="u6251-4"><!-- content -->
+     <p><span id="u6251">Hot</span></p>
+    </div>
+    <div class="clearfix" id="u6252-5"><!-- content -->
+     <p>Time <span id="u6252-2">Zone</span></p>
+    </div>
+   </div>
+   <div class="clearfix grpelem" id="ppwidgetu5301"><!-- column -->
+    <div class="clearfix colelem" id="pwidgetu5301"><!-- group -->
+     <h:form class="form-grp clearfix grpelem" id="widgetu5301" prependId="false" enctype="multipart/form-data" >
+      <div class="position_content" id="widgetu5301_position_content">
+       <div class="fld-grp clearfix colelem" id="widgetu5378" ><!-- none box -->
+        <label class="fld-label actAsDiv clearfix colelem" id="u5379-4" for="widgetu5378_input"><!-- content --><span class="actAsPara">Name</span></label>
+        <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u5381-3"><!-- content --><div id="u5381-2"><h:inputText class="wrapped-input"  id="widgetu5378_input"  tabindex="1" value="#{add_watches_controller.name}" /></div></span>
+       </div>
+       <div class="fld-grp clearfix colelem" id="widgetu5390" ><!-- none box -->
+        <label class="fld-label actAsDiv clearfix colelem" id="u5391-4" for="widgetu5390_input"><!-- content --><span class="actAsPara">Cost</span></label>
+        <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u5393-3"><!-- content --><div id="u5393-2"><h:inputText class="wrapped-input"  id="widgetu5390_input"  tabindex="2" value="#{add_watches_controller.cost}"/></div></span>
+       </div>
+       <div class="fld-grp clearfix colelem" id="widgetu5402" ><!-- none box -->
+        <label class="fld-label actAsDiv clearfix colelem" id="u5403-4" for="widgetu5402_input"><!-- content --><span class="actAsPara">file address</span></label>
+        
+      <h:inputFile  class="fld-input NoWrap actAsDiv clearfix colelem" id="u5404-3" value="#{add_watches_controller.image}"/>
+      
+    
+       </div>
+       <div class="clearfix colelem" id="pu5312-4"><!-- group -->
+       
+      
+        <h:commandButton action="#{add_watches_controller.send_to_jms()}" class="submit-btn NoWrap rounded-corners clearfix grpelem" id="u5303-4"  value="Submit" /><!-- content -->
+       
+       
+       </div>
+      </div>
+     </h:form>
+     
+      
+     
+    </div>
+    <div class="clearfix colelem" id="u5207"><!-- group -->
+     <div class="museBGSize grpelem" id="u5208"><!-- simple frame --></div>
+     <div class="clearfix grpelem" id="u5209-7"><!-- content -->
+      <p id="u5209-2"><span id="u5209">Free Shopping Method</span></p>
+      <p id="u5209-3"> </p>
+      <p id="u5209-5">Watch Seller sells (&amp; buys) used luxury watches online</p>
+     </div>
+     <div class="clearfix grpelem" id="u5210-7"><!-- content -->
+      <p><span id="u5210">Secure Payment System</span></p>
+      <p> </p>
+      <p id="u5210-5">Watch Seller sells (&amp; buys) used luxury watches online</p>
+     </div>
+     <div class="clearfix grpelem" id="u5211-7"><!-- content -->
+      <p><span id="u5211">Secure Payment System</span></p>
+      <p> </p>
+      <p id="u5211-5">Watch Seller sells (&amp; buys) used luxury watches online</p>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="ppu5206-5"><!-- group -->
+     <div class="clearfix grpelem" id="pu5206-5"><!-- column -->
+      <div class="clearfix colelem" id="u5206-5"><!-- content -->
+       <p>Time <span id="u5206-2">Zone</span></p>
+      </div>
+      <div class="clearfix colelem" id="u5201-4"><!-- content -->
+       <p>Watch Seller sells (&amp; buys) used luxury watches online</p>
+      </div>
+     </div>
+     <div class="clearfix grpelem" id="u5202-16"><!-- content -->
+      <p id="u5202-2">Quick List</p>
+      <p id="u5202-3"> </p>
+      <p id="u5202-5">About</p>
+      <p id="u5202-6"> </p>
+      <p id="u5202-8">Offers &amp; Discounts</p>
+      <p id="u5202-9"> </p>
+      <p id="u5202-11">Get Coupon</p>
+      <p id="u5202-12"> </p>
+      <p id="u5202-14">Contact Us</p>
+     </div>
+     <div class="clearfix grpelem" id="u5203-16"><!-- content -->
+      <p id="u5203-2">New Product</p>
+      <p> </p>
+      <p id="u5203-5">Woman Cloth</p>
+      <p id="u5203-6"> </p>
+      <p id="u5203-8">Fashion Accessories</p>
+      <p id="u5203-9"> </p>
+      <p id="u5203-11">Man Accessories</p>
+      <p id="u5203-12"> </p>
+      <p id="u5203-14">Rubber made Toys</p>
+     </div>
+     <div class="clearfix grpelem" id="u5204-16"><!-- content -->
+      <p id="u5204-2">Support</p>
+      <p id="u5204-3"> </p>
+      <p id="u5204-5">Frequently Asked Question</p>
+      <p id="u5204-6"> </p>
+      <p id="u5204-8">Terms &amp; Condition</p>
+      <p id="u5204-9"> </p>
+      <p id="u5204-11">Privacy Policy</p>
+      <p id="u5204-12"> </p>
+      <p id="u5204-14">Report a Payment Issues</p>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="u5205-4"><!-- content -->
+     <p>Copyright 2020 All right reserved</p>
+    </div>
+    
+   </div>
+   <div class="verticalspacer" data-offset-top="1377" data-content-above-spacer="1377" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+  </div>
+ 
+ 
+   </body>
+</html>

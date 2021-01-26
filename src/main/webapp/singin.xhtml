@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+>
+ <head>
+<style>
+
+#u7408-4{
+ box-shadow: 0px 3px 5px grey;
+	
+}
+.bottom{  
+background-color: white;
+
+position:relative;width:100%;
+padding:10% 5%; text-align: center;
+
+}
+.bottom:hover{  
+
+background-color:#999999
+
+}
+</style>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2018.1.1.386"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  
+  
+  <title>sing in</title>
+
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
+  <link rel="stylesheet" type="text/css" href="css/singin.css?crc=433052844" id="pagesheet"/>
+  
+   </head>
+ <body>
+
+  <div class="clearfix borderbox" id="page"><!-- group -->
+   <div class="clearfix grpelem" id="pu7357"><!-- group -->
+    <div class="browser_width" id="u7357-bw">
+     <div class="shadow" id="u7357" style="z-index: 1200" ><!-- simple frame --></div>
+    </div>
+     <h:form prependId="false">
+    <nav class="MenuBar clearfix" id="menuu7358" style="z-index: 1250"><!-- horizontal box -->
+     <div class="MenuItemContainer clearfix grpelem" id="u7387"><!-- vertical box -->
+            <h:commandButton value="Home"  class="bottom"  action="#{index_controllers.go_to_index()}"/>
+
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u7366"><!-- vertical box -->
+           <h:commandButton value="Add"  class="bottom"  action="#{add_watches_controller.go_to_add_watches()}"/>
+
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u7394"><!-- vertical box -->
+        <h:commandButton value="Delete"  class="bottom"  action="#{shop_controller.go_to_shop()}"/>
+
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u7359"><!-- vertical box -->
+           <h:commandButton value="Edit"  class="bottom"  action="#{edit_controller.go_to_edit()}"/>
+
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u7380"><!-- vertical box -->
+    <h:commandButton value="Sing in"  class="bottom"  action="#{singin.go_to_singin()}"/>
+
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u7401"><!-- vertical box -->
+             <h:commandButton value="About"  class="bottom"  action="#{index_controllers.go_to_about()}"/>
+
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u7373"><!-- vertical box -->
+          <h:commandButton value="Shop"  class="bottom"  action="#{index_controllers.go_to_contact()}"/>
+
+     </div>
+    </nav>
+    </h:form>
+    <div class="rounded-corners clearfix" id="u7408-4" style="z-index: 1300"><!-- content -->
+     <p><span id="u7408">Hot</span></p>
+    </div>
+    <div class="clearfix" id="u7409-5" style="z-index: 1300"><!-- content -->
+     <p>Time <span id="u7409-2">Zone</span></p>
+    </div>
+   </div>
+   <div class="clearfix grpelem" id="ppwidgetu7549"><!-- column -->
+    <div class="clearfix colelem" id="pwidgetu7549"><!-- group -->
+     <h:form class="form-grp clearfix grpelem" id="widgetu7549" prependId="false"  data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- none box -->
+      <div class="position_content" id="widgetu7549_position_content">
+       <div class="fld-grp clearfix colelem" id="widgetu7551" data-required="true" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- none box -->
+        <label class="fld-label actAsDiv clearfix colelem" id="u7553-4" for="widgetu7551_input"><!-- content --><span class="actAsPara">Email:</span></label>
+        <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u7554-3"><!-- content --><div id="u7554-2"><h:inputText value="#{loginBacking.email}" class="wrapped-input" id="widgetu7551_input"  tabindex="1"/></div></span>
+       </div>
+       <div class="fld-grp clearfix colelem" id="widgetu7555" data-required="true" data-type="email" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- none box -->
+        <label class="fld-label actAsDiv clearfix colelem" id="u7558-4" for="widgetu7555_input"><!-- content --><span class="actAsPara">Password:</span></label>
+        <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u7556-3"><!-- content --><div id="u7556-2"><h:inputText value="#{loginBacking.password}" class="wrapped-input"  id="widgetu7555_input"  tabindex="2"/></div></span>
+       </div>
+       <div class="clearfix colelem" id="pu7559-4"><!-- group -->
+        <div class="clearfix grpelem" id="u7559-4"><!-- content -->
+         <p>Submitting Form...</p>
+        </div>
+        <div class="clearfix grpelem" id="u7565-4"><!-- content -->
+         <p>The server encountered an error.</p>
+        </div>
+        <div class="clearfix grpelem" id="u7560-4"><!-- content -->
+         <p>Form received.</p>
+        </div>
+        <h:commandButton action="#{loginBacking.submit}"   class="submit-btn NoWrap rounded-corners clearfix grpelem" id="u7550-4" type="submit" value="Log in" tabindex="3" /><!-- content -->
+        
+        
+       </div>
+      </div>
+     </h:form>
+     <h:form class="form-grp clearfix grpelem" id="widgetu7600" prependId="false" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- none box -->
+      <div class="position_content" id="widgetu7600_position_content">
+       <div class="fld-grp clearfix colelem" id="widgetu7604" data-required="true" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- none box -->
+        <label class="fld-label actAsDiv clearfix colelem" id="u7605-4" for="widgetu7604_input"><!-- content --><span class="actAsPara">Email:</span></label>
+        <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u7607-3"><!-- content --><div id="u7607-2"><h:inputText  value="#{singin.username}" class="wrapped-input"  spellcheck="false" id="widgetu7604_input" name="custom_U7604" tabindex="4"/></div></span>
+       </div>
+       <div class="fld-grp clearfix colelem" id="widgetu7609" data-required="true" data-type="email" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- none box -->
+        <label class="fld-label actAsDiv clearfix colelem" id="u7611-4" for="widgetu7609_input"><!-- content --><span class="actAsPara">Password:</span></label>
+        <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u7612-3"><!-- content --><div id="u7612-2"><h:inputText  value="#{singin.password}" class="wrapped-input" spellcheck="false" id="widgetu7609_input" name="Email" tabindex="5"/></div></span>
+       </div>
+       <div class="clearfix colelem" id="pu7602-4"><!-- group -->
+        <div class="clearfix grpelem" id="u7602-4"><!-- content -->
+         <p>Submitting Form...</p>
+        </div>
+        <div class="clearfix grpelem" id="u7603-4"><!-- content -->
+         <p>The server encountered an error.</p>
+        </div>
+        <div class="clearfix grpelem" id="u7608-4"><!-- content -->
+         <p>Form received.</p>
+        </div>
+        <h:commandButton action="#{singin.saveuser()}" class="submit-btn NoWrap rounded-corners clearfix grpelem" id="u7601-4"  value="Register" tabindex="6" /><!-- content -->
+         
+       
+       </div>
+      </div>
+     </h:form>
+    </div>
+    <div class="clearfix colelem" id="u7522"><!-- group -->
+     <div class="museBGSize grpelem" id="u7523"  ><!-- simple frame --></div>
+     <div class="clearfix grpelem" id="u7524-7"><!-- content -->
+      <p id="u7524-2"><span id="u7524">Free Shopping Method</span></p>
+      <p id="u7524-3"> </p>
+      <p id="u7524-5">Watch Seller sells (&amp; buys) used luxury watches online</p>
+     </div>
+     <div class="clearfix grpelem" id="u7525-7"><!-- content -->
+      <p><span id="u7525">Secure Payment System</span></p>
+      <p> </p>
+      <p id="u7525-5">Watch Seller sells (&amp; buys) used luxury watches online</p>
+     </div>
+     <div class="clearfix grpelem" id="u7526-7"><!-- content -->
+      <p><span id="u7526">Secure Payment System</span></p>
+      <p> </p>
+      <p id="u7526-5">Watch Seller sells (&amp; buys) used luxury watches online</p>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="ppu7521-5"><!-- group -->
+     <div class="clearfix grpelem" id="pu7521-5"><!-- column -->
+      <div class="clearfix colelem" id="u7521-5"><!-- content -->
+       <p>Time <span id="u7521-2">Zone</span></p>
+      </div>
+      <div class="clearfix colelem" id="u7516-4"><!-- content -->
+       <p>Watch Seller sells (&amp; buys) used luxury watches online</p>
+      </div>
+     </div>
+     <div class="clearfix grpelem" id="u7517-16"><!-- content -->
+      <p id="u7517-2">Quick List</p>
+      <p id="u7517-3"> </p>
+      <p id="u7517-5">About</p>
+      <p id="u7517-6"> </p>
+      <p id="u7517-8">Offers &amp; Discounts</p>
+      <p id="u7517-9"> </p>
+      <p id="u7517-11">Get Coupon</p>
+      <p id="u7517-12"> </p>
+      <p id="u7517-14">Contact Us</p>
+     </div>
+     <div class="clearfix grpelem" id="u7518-16"><!-- content -->
+      <p id="u7518-2">New Product</p>
+      <p> </p>
+      <p id="u7518-5">Woman Cloth</p>
+      <p id="u7518-6"> </p>
+      <p id="u7518-8">Fashion Accessories</p>
+      <p id="u7518-9"> </p>
+      <p id="u7518-11">Man Accessories</p>
+      <p id="u7518-12"> </p>
+      <p id="u7518-14">Rubber made Toys</p>
+     </div>
+     <div class="clearfix grpelem" id="u7519-16"><!-- content -->
+      <p id="u7519-2">Support</p>
+      <p id="u7519-3"> </p>
+      <p id="u7519-5">Frequently Asked Question</p>
+      <p id="u7519-6"> </p>
+      <p id="u7519-8">Terms &amp; Condition</p>
+      <p id="u7519-9"> </p>
+      <p id="u7519-11">Privacy Policy</p>
+      <p id="u7519-12"> </p>
+      <p id="u7519-14">Report a Payment Issues</p>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="u7520-4"><!-- content -->
+     <p>Copyright 2020 All right reserved</p>
+    </div>
+   </div>
+   <div class="verticalspacer" data-offset-top="1173" data-content-above-spacer="1173" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+  </div>
+  
+  
+   </body>
+</html>

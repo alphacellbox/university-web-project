@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+>
+	
+	
+
+<h:head>
+
+<style>
+
+#u4539-4{
+ box-shadow: 0px 3px 5px grey;
+	
+}
+.bottom{  
+background-color: white;
+
+position:relative;width:100%;
+padding:10% 5%; text-align: center;
+
+}
+.bottom:hover{  
+
+background-color:#999999
+
+}
+</style>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2018.1.1.386"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ 
+<f:metadata>
+		<f:viewParam name="pagenumber" value="#{shop_controller.x}"></f:viewParam>
+	 <f:event type="preRenderView" listener="#{shop_controller.set_watches()}"  />
+	</f:metadata>
+  
+  
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
+  <link rel="stylesheet" type="text/css" href="css/shop.css?crc=241151591" id="pagesheet"/>
+ 
+   </h:head>
+ <h:body>
+
+  <div class="clearfix borderbox" id="page"><!-- group -->
+   <div class="clearfix grpelem" id="pu4488"><!-- group -->
+    <div class="browser_width" id="u4488-bw">
+     <div class="shadow" id="u4488"><!-- simple frame --></div>
+    </div>
+      <h:form>
+    <nav class="MenuBar clearfix" id="menuu4489"><!-- horizontal box -->
+     <div class="MenuItemContainer clearfix grpelem" id="u4504"><!-- vertical box -->
+     <h:commandButton value="Home"  class="bottom" action="#{index_controllers.go_to_index()}"/>
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u4532"><!-- vertical box -->
+         <h:commandButton value="Add"  class="bottom"  action="#{add_watches_controller.go_to_add_watches()}"/>
+
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u4490"><!-- vertical box -->
+       <h:commandButton value="Delete"  class="bottom" action="#{shop_controller.go_to_shop()}"/>
+
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u4511"><!-- vertical box -->
+       <h:commandButton value="Edit"  class="bottom" action="#{edit_controller.go_to_edit()}"/>
+
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u4525"><!-- vertical box -->
+       <h:commandButton value="Blog"  class="bottom"  action="#{index_controllers.go_to_about()}"/>
+
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u4497"><!-- vertical box -->
+       <h:commandButton value="About"  class="bottom" action="#{index_controllers.go_to_about()}"/>
+
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u4518"><!-- vertical box -->
+             <h:commandButton value="Contact"  class="bottom"  action="#{index_controllers.go_to_contact()}"/>
+           
+     </div>
+    </nav>
+    
+  </h:form>
+    <div class="rounded-corners clearfix" id="u4539-4"><!-- content -->
+     <p><span id="u4539">Hot</span></p>
+    </div>
+    <div class="clearfix" id="u4540-5"><!-- content -->
+     <p>Time <span id="u4540-2">Zone</span></p>
+    </div>
+   </div>
+	  
+   <div class="clearfix grpelem" id="ppu4740"><!-- column -->
+    
+	  
+    <div class="clearfix colelem" id="pu4740">
+  <h:form>
+	 <h:commandButton id="watch_1" value="x" action="#{shop_controller.delete_watch_1()}"  style="text-align: center;line-height: 20px;cursor: pointer; width: 25px;height: 25px;color: #FFFFFF;text-align: center;background: #000000;font-size: 200%;">
+	<f:ajax execute="watch_1" render="@all" />
+	</h:commandButton>
+  </h:form>
+  
+    <p:graphicImage style=" z-index: -1;" value="#{shop_controller.file_1}" cache="false" id="u4740"  class="museBGSize clearfix grpelem"  />
+     
+       <h:form>
+	 <h:commandButton id="watch_2" value="x" action="#{shop_controller.delete_watch_2()}"  style="cursor: pointer;text-align: center;line-height: 20px;position:relative;top:-25px;left:60.4%;background: #000000; width: 25px;height: 25px;  display: inline-block;color: #FFFFFF;font-size: 200%;text-align: center">
+	 <f:ajax execute="watch_2" render="@all" /> 
+	</h:commandButton>
+  </h:form>
+		    
+    <p:graphicImage style=" z-index: -1; top: -25px;" value="#{shop_controller.file_2}" cache="false"  class="museBGSize clearfix grpelem" id="u4751"   />  
+ 
+    </div>
+	 	
+    <div class="clearfix colelem" id="pu4823-4"><!-- group -->
+     <div class="clearfix grpelem" id="u4823-4"><!-- content -->
+      <h:outputLabel value="#{shop_controller.text_1}" id="t1"/>
+     </div>
+     <div class="clearfix grpelem" id="u4799-4"><!-- content -->
+      <h:outputLabel value="#{shop_controller.text_2}" id="t2" />
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu4826-4"><!-- group -->
+     <div class="clearfix grpelem" id="u4826-4"><!-- content -->
+       <h:outputLabel value="#{shop_controller.cost_1}" id="c1" />
+     </div>
+     <div class="clearfix grpelem" id="u4814-4"><!-- content -->
+      <h:outputLabel value="#{shop_controller.cost_2}" id="c2"/>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu4763"><!-- group -->
+		 <h:form>
+	 <h:commandButton id="watch_3" value="x" action="#{shop_controller.delete_watch_3()}"  style="text-align: center;line-height: 20px;cursor: pointer; width: 25px;height: 25px;color: #FFFFFF;text-align: center;background: #000000;font-size: 200%;">
+	 
+	<f:ajax execute="watch_3" render="@all" />
+	</h:commandButton>
+  </h:form>
+       <p:graphicImage  value="#{shop_controller.file_3}" cache="false" class="museBGSize grpelem" id="u4763"   /> 
+
+		<h:form>                                                                          
+	 <h:commandButton id="watch_4" value="x" action="#{shop_controller.delete_watch_4()}"  style="cursor: pointer;text-align: center;line-height: 20px;position:relative;top:-25px;left:60.4%;background: #000000; width: 25px;height: 25px;  display: inline-block;color: #FFFFFF;font-size: 200%;text-align: center">
+	 <f:ajax execute="watch_4" render="@all" /> 
+	</h:commandButton>
+  </h:form>
+  <p:graphicImage style=" z-index: -1; top: -25px;"  value="#{shop_controller.file_4}" cache="false" class="museBGSize grpelem" id="u4766"  /> 
+
+     
+    </div>
+    <div class="clearfix colelem" id="pu4829-4"><!-- group -->
+     <div class="clearfix grpelem" id="u4829-4"><!-- content -->
+      <h:outputLabel value="#{shop_controller.text_3}" id="t3"/>
+     </div>
+     <div class="clearfix grpelem" id="u4838-4"><!-- content -->
+     <h:outputLabel value="#{shop_controller.text_4}" id="t4" />
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu4832-4"><!-- group -->
+     <div class="clearfix grpelem" id="u4832-4"><!-- content -->
+      <h:outputLabel value="#{shop_controller.cost_3}" id="c3"/>
+     </div>
+     <div class="clearfix grpelem" id="u4841-4"><!-- content -->
+     <h:outputLabel value="#{shop_controller.cost_4}" id="c4"/>
+     </div>
+    </div>
+    <!-- /////////// -->
+    
+    <div class="colelem" id="u4769"><!-- simple frame --></div>
+    <div class="clearfix colelem" id="pu4772-4"><!-- group -->
+      <h:link value="#{shop_controller.one}" rendered="#{shop_controller.permition_for_one()}"  outcome="shop" class="clearfix grpelem" id="u4772-4" >
+    
+  
+					<f:param name="pagenumber" value="#{shop_controller.one}" />
+				
+    
+    </h:link>
+    <h:link  rendered="#{shop_controller.permition_for_two()}"  value="#{shop_controller.two}" outcome="shop" class="clearfix grpelem" id="u4778-4" >
+    
+  
+					<f:param name="pagenumber" value="#{shop_controller.two}" />
+				
+    
+    </h:link>
+      <h:link  rendered="#{shop_controller.permition_for_three()}"  value="#{shop_controller.three}" outcome="shop" class="clearfix grpelem" id="u4781-4" >
+    
+  
+					<f:param name="pagenumber" value="#{shop_controller.three}" />
+				
+    
+    </h:link>
+     <h:link  rendered="#{shop_controller.permition_for_four()}"  value="#{shop_controller.four}" outcome="shop" class="clearfix grpelem" id="u4784-4" >
+    
+  
+					<f:param name="pagenumber" value="#{shop_controller.four}" />
+				
+    
+    </h:link>
+      <h:link  rendered="#{shop_controller.permition_for_five()}"  value="..." outcome="shop" class="clearfix grpelem" id="u4787-4" >
+    
+  
+					<f:param name="pagenumber" value="#{shop_controller.five}" />
+				
+    
+    </h:link>
+     
+     
+    </div>
+    <!-- /////////// -->
+    <div class="clearfix colelem" id="u4713"><!-- group -->
+     <div class="museBGSize grpelem" id="u4714"><!-- simple frame --></div>
+     <div class="clearfix grpelem" id="u4715-7"><!-- content -->
+      <p id="u4715-2"><span id="u4715">Free Shopping Method</span></p>
+      <p id="u4715-3"> </p>
+      <p id="u4715-5">Watch Seller sells (&amp; buys) used luxury watches online</p>
+     </div>
+     <div class="clearfix grpelem" id="u4716-7"><!-- content -->
+      <p><span id="u4716">Secure Payment System</span></p>
+      <p> </p>
+      <p id="u4716-5">Watch Seller sells (&amp; buys) used luxury watches online</p>
+     </div>
+     <div class="clearfix grpelem" id="u4717-7"><!-- content -->
+      <p><span id="u4717">Secure Payment System</span></p>
+      <p> </p>
+      <p id="u4717-5">Watch Seller sells (&amp; buys) used luxury watches online</p>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="ppu4712-5"><!-- group -->
+     <div class="clearfix grpelem" id="pu4712-5"><!-- column -->
+      <div class="clearfix colelem" id="u4712-5"><!-- content -->
+       <p>Time <span id="u4712-2">Zone</span></p>
+      </div>
+      <div class="clearfix colelem" id="u4707-4"><!-- content -->
+       <p>Watch Seller sells (&amp; buys) used luxury watches online</p>
+      </div>
+     </div>
+     <div class="clearfix grpelem" id="u4708-16"><!-- content -->
+      <p id="u4708-2">Quick List</p>
+      <p id="u4708-3"> </p>
+      <p id="u4708-5">About</p>
+      <p id="u4708-6"> </p>
+      <p id="u4708-8">Offers &amp; Discounts</p>
+      <p id="u4708-9"> </p>
+      <p id="u4708-11">Get Coupon</p>
+      <p id="u4708-12"> </p>
+      <p id="u4708-14">Contact Us</p>
+     </div>
+     <div class="clearfix grpelem" id="u4709-16"><!-- content -->
+      <p id="u4709-2">New Product</p>
+      <p> </p>
+      <p id="u4709-5">Woman Cloth</p>
+      <p id="u4709-6"> </p>
+      <p id="u4709-8">Fashion Accessories</p>
+      <p id="u4709-9"> </p>
+      <p id="u4709-11">Man Accessories</p>
+      <p id="u4709-12"> </p>
+      <p id="u4709-14">Rubber made Toys</p>
+     </div>
+     <div class="clearfix grpelem" id="u4710-16"><!-- content -->
+      <p id="u4710-2">Support</p>
+      <p id="u4710-3"> </p>
+      <p id="u4710-5">Frequently Asked Question</p>
+      <p id="u4710-6"> </p>
+      <p id="u4710-8">Terms &amp; Condition</p>
+      <p id="u4710-9"> </p>
+      <p id="u4710-11">Privacy Policy</p>
+      <p id="u4710-12"> </p>
+      <p id="u4710-14">Report a Payment Issues</p>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="u4711-4"><!-- content -->
+     <p>Copyright 2020 All right reserved</p>
+    </div>
+   </div>
+   <div class="verticalspacer" data-offset-top="1942" data-content-above-spacer="1942" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+  </div>
+ 
+   </h:body>
+</html>

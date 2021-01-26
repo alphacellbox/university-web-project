@@ -1,0 +1,4 @@
+<jboss-web >
+  <security-domain>jaspitest</security-domain>
+   <context-root>uni</context-root>
+</jboss-web>
